@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wisdom Hand Work</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    .product {
+      background-color: white;
+      width: 90%;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      perspective: 1000px;
+    }
+
+    .product:hover {
+      transform: translateY(-10px) rotateX(3deg) rotateY(-3deg);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    }
+
+    .product img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 20px;
+      flex-shrink: 0;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s;
+    }
+
+    .product:hover img {
+      transform: scale(1.05) rotateZ(2deg);
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .product-details h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      color: #1f4037;
+    }
+
+    .product-details p {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .product-details .price {
+      font-weight: bold;
+      color: #e67e22;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .product {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .product img {
+        margin: 0 0 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <img src="srk.jpg" alt="Logo" class="logo" style="width: 50px; height: 60px; border-radius: 50%; border: 3px solid white;">
+      <div class="text-content">
+        <h1>Wisdom Hand Work</h1>
+        <p>Contact: +91 89615 08521</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="product">
+    <img src="ARK.JPG" alt="Product 1">
+    <div class="product-details">
+      <h3>Handcrafted Wooden Frame</h3>
+      <p>Location: Kolkata, Kestopur</p>
+      <p class="price">Price: ₹1,2000</p>
+      <p>Description: A unique handcrafted wooden frame perfect for gifts or home decor.</p>
+      <p>Contact: +91 89615 08521</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="SA.jpg" alt="Product 2">
+    <div class="product-details">
+      <h3>Customized Name Plate</h3>
+      <p>Location: Kolkata, Kestopur</p>
+      <p class="price">Price: ₹900</p>
+      <p>Description: Elegant and personalized name plates for your home or office.</p>
+      <p>Contact: +91 89615 08521</p>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="MAK.jpg" alt="Product 3">
+    <div class="product-details">
+      <h3>Decorative Wall Hanging</h3>
+      <p>Location: Kolkata, Kestopur</p>
+      <p class="price">Price: ₹1,500</p>
+      <p>Description: Beautifully crafted wall hanging that adds charm to your space.</p>
+      <p>Contact: +91 89615 08521</p>
+    </div>
+  </div>
+
+</body>
+</html>
